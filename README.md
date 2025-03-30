@@ -1,18 +1,16 @@
 # Password Strength Checker
 
-## Disclaimer
-This project is intended for educational and ethical security improvement purposes only. Unauthorized use of password strength evaluation tools for malicious activities is illegal and punishable by law. Always ensure ethical and legal compliance when using this tool.
-
 ## Project Objective
-Develop a Python-based password strength checker that evaluates password security using a point-based system. The evaluation follows NIST (National Institute of Standards and Technology) guidelines, which recommend:
+To develop a Python-based password strength checker that evaluates password security using a point-based system, and checks against a list of 10,000 common passwords to prevent dictionary attacks. The evaluation follows these criteria (each worth 1 point, totaling 6 maximum points): 
 
-- A minimum of 8 characters for passwords
-- Encouraging the use of passphrases instead of complex character combinations
-- Checking against common password lists to prevent weak choices
-- Avoiding arbitrary complexity rules (e.g., requiring special characters)
-- Allowing copy-paste and visibility toggles for usability
+- A minimum of 12 characters for passwords
+- A minimum of 16 characters for passwords
+- At least 1 lowercase character
+- At least 1 uppercase character
+- Password must contain 1 digit
+- Password must contain 1 special character
 
-The goal is to help users create stronger, more secure passwords while adhering to industry standards.
+The scoring ranges from Very Weak to Extremely Strong depending on the number of points the password scores. The goal is to help users create stronger, more secure passwords. 
 
 ## Skills Learned
 - Python Programming
